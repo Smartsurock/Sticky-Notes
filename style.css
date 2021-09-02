@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*===========================================================================*/
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe:regular");
+
+.body {
+  background-color: #d9b38e;
+  min-height: 100vh;
+  font-family: "ZCOOL KuaiLe", cursive;
+  font-size: 22px;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0px auto;
+  line-height: 40px;
+}
+.title {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgb(56, 56, 56);
+}
+.button {
+  background-color: #fff;
+  padding: 0px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px 0px 0px 0px;
+}
+.js-note {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-3deg);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 2px 2px #fff;
+  margin: 3px;
+  padding: 10px;
+  user-select: none;
+  overflow: hidden;
+}
+.js-note1 {
+  transform: rotate(-2deg);
+  background-color: rgb(131, 77, 77);
+}
+.js-note2 {
+  transform: rotate(2deg);
+  background-color: rgb(152, 224, 174);
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+.textarea {
+  width: 400px;
+  height: 250px;
+  padding: 15px 25px;
+  font-size: 22px;
+}
+.modal__body {
+  position: relative;
+}
+.close {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  font-size: 16px;
+}
